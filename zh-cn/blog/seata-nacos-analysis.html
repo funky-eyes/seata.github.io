@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="/build/blogDetail.css" />
 </head>
 <body>
-	<div id="root"><div class="blog-detail-page" data-reactroot=""><header class="header-container header-container-normal"><div class="header-body"><a href="/zh-cn/index.html"><img class="logo" src="/img/seata_logo.png"/></a><span class="language-switch language-switch-normal">En</span><div class="header-menu"><img class="header-menu-toggle" src="/img/system/menu_gray.png"/><ul><li class="menu-item menu-item-normal"><a href="/zh-cn/index.html" target="_self">首页</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/docs/overview/what-is-seata.html" target="_self">文档</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/docs/developers/developers_dev.html" target="_self">开发者</a></li><li class="menu-item menu-item-normal menu-item-normal-active"><a href="/zh-cn/blog/index.html" target="_self">博客</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/community/index.html" target="_self">社区</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/blog/download.html" target="_self">下载</a></li></ul></div></div></header><section class="blog-content markdown-body"><h1>Seata分布式事务启用Nacos做配置中心</h1>
+	<div id="root"><div class="blog-detail-page" data-reactroot=""><header class="header-container header-container-normal"><div class="header-body"><a href="/zh-cn/index.html"><img class="logo" src="/img/seata_logo.png"/></a><div class="search search-normal"><span class="icon-search"></span></div><span class="language-switch language-switch-normal">En</span><div class="header-menu"><img class="header-menu-toggle" src="/img/system/menu_gray.png"/><ul><li class="menu-item menu-item-normal"><a href="/zh-cn/index.html" target="_self">首页</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/docs/overview/what-is-seata.html" target="_self">文档</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/docs/developers/developers_dev.html" target="_self">开发者</a></li><li class="menu-item menu-item-normal menu-item-normal-active"><a href="/zh-cn/blog/index.html" target="_self">博客</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/community/index.html" target="_self">社区</a></li><li class="menu-item menu-item-normal"><a href="/zh-cn/blog/download.html" target="_self">下载</a></li></ul></div></div></header><section class="blog-content markdown-body"><h1>Seata分布式事务启用Nacos做配置中心</h1>
 <p><a href="https://gitee.com/itCjb/springboot-dubbo-mybatisplus-seata">项目地址</a></p>
 <p>本文作者：FUNKYE(陈健斌),杭州某互联网公司主程。</p>
 <h1>前言</h1>
@@ -20,21 +20,21 @@
 <p>我们接着上一篇的基础上去配置nacos做配置中心跟dubbo注册中心.</p>
 <h2>准备工作</h2>
 <p>​	1.首先去nacos的github上下载<a href="https://github.com/alibaba/nacos/releases/tag/1.1.4">最新版本</a></p>
-<p>​	<img src="img%5Cblog%5C20191202203649.png" alt=""></p>
+<p>​	<img src="/img/blog/20191202203649.png" alt=""></p>
 <p>​	2.下载好了后,很简单,解压后到bin目录下去启动就好了,看到如图所示就成了：</p>
-<p><img src="img%5Cblog%5C20191202203943.png" alt=""></p>
+<p><img src="/img/blog/20191202203943.png" alt=""></p>
 <p>​	3.启动完毕后访问:<a href="http://127.0.0.1:8848/nacos/#/login">http://127.0.0.1:8848/nacos/#/login</a></p>
-<p><img src="img%5Cblog%5C20191202204101.png" alt=""></p>
+<p><img src="/img/blog/20191202204101.png" alt=""></p>
 <p>是不是看到这样的界面了?输入nacos(账号密码相同),先进去看看吧.</p>
 <p>这时候可以发现没有任何服务注册</p>
-<p><img src="img%5Cblog%5C20191202204147.png" alt="20191202204147"></p>
+<p><img src="/img/blog/20191202204147.png" alt="20191202204147"></p>
 <p>别急我们马上让seata服务连接进来.</p>
 <h2>Seata配置</h2>
 <p>​	1.进入seata的conf文件夹看到这个木有?</p>
-<p><img src="img%5Cblog%5C20191202204259.png" alt=""></p>
+<p><img src="/img/blog/20191202204259.png" alt=""></p>
 <p>就是它,编辑它:</p>
-<p><img src="img%5Cblog%5C20191202204353.png" alt="20191202204353"></p>
-<p><img src="img%5Cblog%5C20191202204437.png" alt="20191202204437"></p>
+<p><img src="/img/blog/20191202204353.png" alt="20191202204353"></p>
+<p><img src="/img/blog/20191202204437.png" alt="20191202204437"></p>
 <p>​	2.然后记得保存哦!接着我们把registry.conf文件打开编辑：</p>
 <pre><code>registry {
   # file 、nacos 、eureka、redis、zk、consul、etcd3、sofa
@@ -384,5 +384,14 @@ config {
 		window.rootPath = '';
   </script>
 	<script src="/build/blogDetail.js"></script>
+	<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?104e73ef0c18b416b27abb23757ed8ee";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </body>
 </html>

@@ -57,6 +57,20 @@
                 dateStr: 'Dec 2th, 2019',
                 desc: '本文讲述如何使用Seata整合Nacos配置',
                 link: '/zh-cn/blog/seata-nacos-analysis.html',
+            },
+            {
+                title: 'Docker部署Seata与Nacos整合',
+                author: '@FUNKYE',
+                dateStr: 'Dec 3th, 2019',
+                desc: '本文讲述如何使用Seata整合Nacos配置的Docker部署',
+                link: '/zh-cn/blog/seata-nacos-docker.html',
+            },
+            {
+                title: '通过AOP动态创建/关闭Seata分布式事务',
+                author: '@FUNKYE',
+                dateStr: 'Dec 23th, 2019',
+                desc: '本文讲述如何通过AOP动态创建/关闭Seata分布式事务',
+                link: '/zh-cn/blog/seata-spring-boot-aop-aspectj.html',
             }
         ]
     },
